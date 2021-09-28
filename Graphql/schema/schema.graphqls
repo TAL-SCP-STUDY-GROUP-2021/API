@@ -1,0 +1,54 @@
+type Article{
+    id:ID!
+    text:String!
+    isPublished:Boolean!
+    author:User!
+    comments:[Comment!]
+}
+
+type User{
+    id:ID!
+    name:String!
+    Email:String!
+    Sex:String!
+}
+
+type Comment{
+    id:ID!
+    desc:String!
+    author:User!
+}
+input NewArticle {
+    text: String!
+    authorId: ID!
+}
+input NewUser {
+    name:String!
+    email:String!
+    sex:String!
+}
+input NewComment {
+    desc: String!
+    authorId: ID!
+}
+type Query{
+    articles:[Article!]!
+    article(id:Int):Article!
+    users:[User!]!
+    user(id:Int):User!
+    comments:[Comment!]!
+    comment(id:Int):Comment!
+}
+type Mutation{
+    createArticle(input:NewArticle!):Article!
+    updateArticle(id:Int):Article!
+    deleteArticle(id:Int):Article!
+
+    createUser(input:NewUser!):User!
+    updateUser(id:Int):User!
+    deleteUser(id:Int):User!
+
+    createComment(input:NewComment!):Comment!
+    updateComment(id:Int):Comment!
+    deleteComment(id:Int):Comment!
+}
