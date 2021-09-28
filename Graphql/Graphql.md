@@ -106,7 +106,7 @@ type Comment{
 
 基本语法：[GraphQL官网]( https://graphql.cn/learn/queries/#fields)
 
-在GraphQL中，我们通过预先定义`Schema`对借口进行声明，也可以将该文件作为接口文档。
+在GraphQL中，我们通过预先定义`Schema`对接口进行声明，也可以将该文件作为接口文档。
 
 #### 对象的声明
 
@@ -202,3 +202,4 @@ type Mutation{
 6. [用接口的思想来理解GraphQL](https://juejin.cn/post/6844903647256526855)
 7. [【从初学到放弃】*GraphQL*](https://zhuanlan.zhihu.com/p/109424841)
 8. [代码之上：我们落地 *GraphQL* 背后的故事](https://zhuanlan.zhihu.com/p/141629697)
+9. [阻碍你使用 GraphQL 的十个问题](https://jerryzou.com/posts/10-questions-about-graphql/#3-graphql-%E4%B8%8E-restful-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB)
